@@ -1,0 +1,19 @@
+{
+  "name": "backendtasks-vr",
+  "version": "1.0.0",
+  "description": "Backend of Tasks aplication ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victordnb/BackendTasks-VR.git"
+  },
+  "author": "Victor Cubiles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victordnb/BackendTasks-VR/issues"
+  },
+  "homepage": "https://github.com/victordnb/BackendTasks-VR#readme"
+}
