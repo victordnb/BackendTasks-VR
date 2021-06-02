@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var TaskSchema = Schema({
-    Title: String,
+    title: String,
     completed: { type : Boolean, default: false},
     boards: [
         {

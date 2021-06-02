@@ -6,6 +6,7 @@ var app = express();
 
 //cargamos rutas:
 var user_routes = require('./routes/user');
+var task_routes = require('./routes/task');
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json()); //convierte a objeto JSON los datos que vienen por http
@@ -21,7 +22,9 @@ app.use((req, res, next) => {
 });
 
 //Rutas base:
-//app.use('/api', user_routes);
+app.use('/api', user_routes);
+app.use('/api', task_routes);
+
 
 app.get('/prueba', function (req, res){
     res.status(200).send({message: 'Bienvenido al backend de prTAsks-vr'});
